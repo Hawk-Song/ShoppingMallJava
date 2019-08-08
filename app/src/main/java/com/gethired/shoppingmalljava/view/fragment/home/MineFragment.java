@@ -14,10 +14,10 @@ import com.gethired.shoppingmalljava.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class MineFragment extends Fragment {
 
 
-    public HomeFragment() {
+    public MineFragment() {
         // Required empty public constructor
     }
 
@@ -26,7 +26,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_layout, container, false);
+        return inflater.inflate(R.layout.fragment_mine_layout, container, false);
     }
 
 }
