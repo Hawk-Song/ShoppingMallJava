@@ -1,4 +1,6 @@
-package com.gethired.ghsdk.okhttp;
+package com.gethired.ghsdk.okhttp.request;
+
+import com.gethired.ghsdk.okhttp.https.HttpsUtils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -35,7 +37,6 @@ public class CommonOkHttpClient {
                 return true;
             }
         });
-
-        okHttpBuilder.sslSocketFactory()
+        okHttpBuilder.sslSocketFactory(HttpsUtils.initSSLSocketFactory(), HttpsUtils.initTrustManager());
     }
 }
